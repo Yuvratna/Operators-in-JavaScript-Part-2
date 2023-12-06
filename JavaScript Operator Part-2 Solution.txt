@@ -1,0 +1,95 @@
+Problem Statement 1
+Explain the usage of ternary operator with syntax and write a program to check whether the number is even or odd using the ternary operator.
+
+Ans : The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy.
+
+Syntax:
+	condition ? exprIfTrue : exprIfFalse
+
+	condition
+	An expression whose value is used as a condition.
+
+	exprIfTrue
+	An expression which is executed if the condition evaluates to a truthy value (one 	which equals or can be converted to true).
+
+	exprIfFalse
+	An expression which is executed if the condition is falsy (that is, has a value which 	can be converted to false).
+
+Ex1:	const num1 = 100
+	const result1 = num1 % 2 === 0 ? "Number is Even" : "Number is Odd";
+	console.log(result1);
+
+Ex2:	const num2 = 7;
+	const result2 = num2 % 2 === 0 ? "Number is Even" : "Number is Odd";
+	console.log(result2);
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement 2
+Describe the usage of the comma operator in JavaScript and provide an example.
+
+Ans : Comma Operator (,) mainly evaluates its operands from left to right sequentially and returns the value of the rightmost operand. A comma operator is used as a separator for multiple expressions at a place that requires a single expression. When a comma operator is placed in an expression, it executes each expression and returns the rightmost expression.
+
+Syntax:
+	Expression1, Expression2, Expression3, ...so on
+
+In the above syntax, multiple expressions are separated using a comma operator. During execution, each expression will be executed from left to right and the rightmost expression will be returned.
+
+Ex1.
+	let x = 1;
+
+	x = (x++, x);
+
+	console.log(x);
+	// Expected output: 2
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement 3
+Use a nested ternary operator to check that a number is positive, negative or zero. You have to print “positive” if the number is positive and similarly for negative and zero also.
+
+Ans : 	const num = 10
+	num > 0 ? console.log("Number is Positive") : num < 0 ? console.log("Number is 	Negative") : console.log("Number is Zero");
+	
+	// Output
+	// Number is Positive
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement 4
+Use a ternary operator to check that a person is eligible to vote or not by checking his age. If the age of the person is less than 18 then “You cannot vote” should be logged else “You can vote” should be logged.
+
+Ans : 	const age = 21
+	age > 18 ? console.log("You are elligible Vote") : console.log("You are not 	elligible to vote")
+	
+	// Output
+	// You are elligible Vote
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
